@@ -46,9 +46,9 @@ $(function() {
     });
 
     describe('The menu', function() {
-			var menuIcon = $('.menu-icon-link');
-			var body = $('body');
-			var menu = $('.slide-menu');
+			let menuIcon = $('.menu-icon-link');
+			 		body = $('body'),
+			 		menu = $('.slide-menu'),
 
 			/* this test is to ensure the menu element is
 			* hidden by default.
@@ -92,7 +92,7 @@ $(function() {
 		 /* this test ensures that when a new feed is loaded
 		 * by the loadFeed function that the content actually changes.
 		 */
-		 var oldFeed, newFeed;
+		 let oldFeed, newFeed;
 		beforeEach(function(done) {
 			 $('.feed').empty();
  			loadFeed(0, function() {
