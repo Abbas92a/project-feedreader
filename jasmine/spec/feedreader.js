@@ -77,9 +77,7 @@ $(function() {
 			* a single .entry element within the .feed container.
 			*/
 			beforeEach(function(done) {
-				loadFeed(0, function() {
-					done();
-				});
+				loadFeed(0, done);
 			});
 
 			it('there is at least a single entry within the feed', function(done) {
