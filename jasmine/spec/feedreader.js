@@ -83,7 +83,7 @@ $(function() {
 			});
 
 			it('there is at least a single entry within the feed', function(done) {
-				expect(document.querySelector('.entry')).not.toBeNull();
+				expect(document.querySelector('.feed .entry')).not.toBeNull();
 				done();
 			});
     });
